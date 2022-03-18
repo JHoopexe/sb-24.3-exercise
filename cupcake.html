@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcakes!</title>
+</head>
+<body>
+    <h1>Cupcakes</h1>
+    <ul></ul>
+    <p></p>
+    <h4>Create Cupcake</h4>
+    <form action="/api/cupcakes" method="POST">
+        <label>Flavor</label>
+        <input id="flavor" type="" name="flavor" placeholder="Enter flavor here" required>
+        <label>Size</label>
+        <input id="size" type="" name="size" placeholder="Enter size here" required>
+        <label>Rating</label>
+        <input id="rating" type="number" min="1" max="10" name="rating" placeholder="Enter rating here" required>
+        <label>Image</label>
+        <input id="image" type="url" name="image" placeholder="Enter image url here">
+        <button type="submit">Create!</button>
+    </form>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="static/cupcake.js"></script>
+</body>
+</html>
